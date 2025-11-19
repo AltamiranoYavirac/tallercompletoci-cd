@@ -7,11 +7,8 @@ app = Flask(__name__)
 def home():
     return "<h1>Hola desde Flask con Traefik 🚀</h1>"
 
-
 @app.route('/saludo/<nombre>')
-def saludo(nombre):
-    
-    
+def saludo(nombre): 
     return f"<h2>Hola {nombre}, bienvenido a pgmoreno.byronrm.com</h2>"
 
 if __name__ == '__main__':
