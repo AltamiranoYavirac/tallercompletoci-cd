@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   cristian:
-    image: 
+    image: ghcr.io/altamiranoyavirac/tallercompletoci-cd:1.0.0
     deploy:
       labels:
         - "traefik.enable=true"
