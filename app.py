@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     # URL de la imagen externa que proporcionaste
-    imagen_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrhMSmf-WZVA9yBsq_Qzkc1HRxKtfqC0s9b0x-0JwmU5l_cEF1IZhvBNJJzh947sLVkd8&usqp=CAU"
+    imagen_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlX7Ufu-zoF0RdTWvWAHroa4z3MCvPZbSAig43-EuDm-g57v6EWH6DYHJeOCYJScHydac&usqp=CAU"
     
     return f"""
     <div style="text-align: center;">
