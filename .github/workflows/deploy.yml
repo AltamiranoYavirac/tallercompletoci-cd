@@ -81,7 +81,7 @@ jobs:
         port: ${{ secrets.VPS_SSH_PORT }}
         script: |
           echo "Desplegando servicios"
-          cd ~ /despliegue
+          cd ~/despliegue
 
           #Paso 1 Descargar la imagen
           #echo "==> descargando la imagen del GHCR"
