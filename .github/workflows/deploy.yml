@@ -80,14 +80,15 @@ jobs:
         password: ${{ secrets.VPS_PASSWORD }}
         port: ${{ secrets.VPS_SSH_PORT }}
         script: |
-          echo "Desplegando servicios"
+          #echo "Desplegando servicios"
 
           #Borrar el stack siempre
-          docker stack rm cristian || true
+          #docker stack rm cristian || true
 
-          echo "==> descargandola imagen del GHCR"
-          # docker pull ghcr.io/altamiranoyavirac/tallercompletoci-cd:1.0.0
+          #echo "==> descargando la imagen del GHCR"
+          echo "${{ secret.GHCR_PAT }}" | docker login ghcr.io -u altamiranoyavirac --password-stdin
+          docker pull ghcr.io/altamiranoyavirac/tallercompletoci-cd:1.0.0
 
-          echo "==> Desplegando stack..."
-          docker stack deploy -c stack.yml --with-registry-auth cristhian
+          #echo "==> Desplegando stack..."
+          #docker stack deploy -c stack.yml --with-registry-auth cristhian
         
