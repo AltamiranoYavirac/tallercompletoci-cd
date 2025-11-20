@@ -83,7 +83,7 @@ jobs:
           echo "Desplegando servicios"
           cd ~/despliegue
 
-          #Paso 1 Descargar la imagen
+          #Paso 1 Descargar la imagen :)
           #echo "==> descargando la imagen del GHCR"
           echo "${{ secrets.GHCR_PAT }}" | docker login ghcr.io -u altamiranoyavirac --password-stdin
           docker pull ghcr.io/altamiranoyavirac/tallercompletoci-cd:1.0.0
